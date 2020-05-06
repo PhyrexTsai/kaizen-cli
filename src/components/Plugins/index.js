@@ -28,6 +28,7 @@ function builder(yargs) {
     'zabo'.underline.yellow + ' - Zabo SDK provides convenient access to the Zabo API\n' +
     'loom'.underline.yellow + ' - Loom network provides multichain interop platform for serious dapp developers\n' +
     'witnet'.underline.yellow + ' - Witnet provides decentralized oracle network\n' + 
+    'ramp'.underline.yellow + ' - Ramp offer fiat and crypto currency exchange\n' +
 		'\nRun ' + '\'kaizen plugins <command>\''.yellow + 
 		' to interact with plugins.\n'
 	);

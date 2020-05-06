@@ -20,6 +20,7 @@ const kavaHandler = require('./kava.js');
 const zaboHandler = require('./zabo.js');
 const loomHandler = require('./loom.js');
 const witnetHandler = require('./witnet.js');
+const rampHandler = require('./ramp.js');
 
 function builder(yargs) {
   return yargs
@@ -176,6 +177,13 @@ async function handler(argv) {
         Spinner.stop();
         Log.SuccessLog(`Install plugin ${plugin} Successfully`);
         break;
+      case 'ramp':
+          Log.NormalLog('Installing plugin, please wait a second...');
+          Spinner.start();
+          await rampHandler();
+          Spinner.stop();
+          Log.SuccessLog(`Install plugin ${plugin} Successfully`);
+          break;
       default:
         Log.NormalLog('Plugin not support yet');
     }

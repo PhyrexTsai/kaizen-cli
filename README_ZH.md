@@ -114,6 +114,7 @@ KAIZEN Platform 目前正在 Alpha 階段
 - [Kava](https://www.kava.io/) - Cross-chain CDP platform for leverage assets
 - [Zabo](https://zabo.com/) - Multiple crypto wallet provider
 - [Loom](https://loomx.io/) - The Production-ready, Multichain Interop Platform for Serious Dapp Developers
+- [Ramp](https://instant.ramp.network/) - Ramp Network offer fiat to crypto currency exchange
 
 ## <a name="smart-contracts"></a>📑 智能合約
 - [ERC20](https://github.com/PortalNetwork/kaizen-contracts/tree/master/ERC20) 

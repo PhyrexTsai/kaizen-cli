@@ -25,6 +25,7 @@ async function handler(argv) {
   Log.NormalLog('zabo'.underline.yellow + ' - Zabo information');
   Log.NormalLog('loom'.underline.yellow + ' - Loom information');
   Log.NormalLog('witnet'.underline.yellow + ' - Witnet infromation');
+  Log.NormalLog('ramp'.underline.yellow + ' - Ramp infromation');
 
   Log.NormalLog("\nTo install a plugin run " + "'kaizen plugins install <plugin-name-here>'".yellow)
 
