@@ -4,6 +4,7 @@ const ExecuteCommand = require("../../../lib/ExecuteCommand");
 
 module.exports = async function () {
   await ExecuteCommand("npm uninstall @kava-labs/switch-api");
+  await ExecuteCommand("npm uninstall @kava-labs/javascript-sdk");
 
   // update user's kaizen config
   const configPath = path.resolve('./', 'kaizen.json');

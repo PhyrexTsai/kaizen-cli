@@ -24,6 +24,10 @@ regeneratorRuntime.mark(function _callee() {
           return ExecuteCommand("npm uninstall @kava-labs/switch-api");
 
         case 2:
+          _context.next = 4;
+          return ExecuteCommand("npm uninstall @kava-labs/javascript-sdk");
+
+        case 4:
           // update user's kaizen config
           configPath = path.resolve('./', 'kaizen.json');
           userConfig = fsx.existsSync(configPath) ? fsx.readJsonSync(configPath) : {};
@@ -40,7 +44,7 @@ regeneratorRuntime.mark(function _callee() {
 
           fsx.outputJsonSync(path.resolve('./', 'kaizen.json'), userConfig);
 
-        case 7:
+        case 9:
         case "end":
           return _context.stop();
       }
