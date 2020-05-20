@@ -116,6 +116,7 @@ The KAIZEN Platform is currently in experimental alpha.
 - [Loom](https://loomx.io/) - The Production-ready, Multichain Interop Platform for Serious Dapp Developers
 - [Ramp](https://instant.ramp.network/) - Ramp Network offer fiat to crypto currency exchange
 - [Witnet](https://witnet.io/) - Witnet provides decentralized oracle network
+- [0xcert](https://0xcert.org/) - Build decentralized apps using fungible and non-fungible tokens quickly, cost efficiently and securely.
 
 ## <a name="instances"></a>⚙️ Instances
 - [NYM](http://nymtech.net/) - Decentralized privacy

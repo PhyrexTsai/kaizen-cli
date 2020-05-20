@@ -29,6 +29,7 @@ function builder(yargs) {
     'loom'.underline.yellow + ' - Loom network provides multichain interop platform for serious dapp developers\n' +
     'witnet'.underline.yellow + ' - Witnet provides decentralized oracle network\n' + 
     'ramp'.underline.yellow + ' - Ramp offer fiat and crypto currency exchange\n' +
+    '0xcert'.underline.yellow + ' - Build decentralized apps using fungible and non-fungible tokens quickly, cost efficiently and securely.\n' +
 		'\nRun ' + '\'kaizen plugins <command>\''.yellow + 
 		' to interact with plugins.\n'
 	);

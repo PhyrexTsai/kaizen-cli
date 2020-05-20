@@ -22,6 +22,7 @@ const zaboHandler = require('./zabo.js');
 const loomHandler = require('./loom.js');
 const witnetHandler = require('./witnet.js');
 const rampHandler = require('./ramp.js');
+const zeroxcertHandler = require('./zeroxcert.js');
 
 function builder(yargs) {
   return yargs
@@ -197,13 +198,21 @@ async function handler(argv) {
         Log.SuccessLog(`Remove plugin ${plugin} Successfully`);
         break;
       case 'ramp':
-          Log.NormalLog('Uninstalling plugin, please wait a second...');
-          Spinner.start();
-          await rampHandler();
-          updateKaizenJson(kaizenJson, 'ramp');
-          Spinner.stop();
-          Log.SuccessLog(`Remove plugin ${plugin} Successfully`);
-          break;
+        Log.NormalLog('Uninstalling plugin, please wait a second...');
+        Spinner.start();
+        await rampHandler();
+        updateKaizenJson(kaizenJson, 'ramp');
+        Spinner.stop();
+        Log.SuccessLog(`Remove plugin ${plugin} Successfully`);
+        break;
+      case '0xcert':
+        Log.NormalLog('Uninstalling plugin, please wait a second...');
+        Spinner.start();
+        await zeroxcertHandler();
+        updateKaizenJson(kaizenJson, '0xcert');
+        Spinner.stop();
+        Log.SuccessLog(`Remove plugin ${plugin} Successfully`);
+        break;
       default:
         Log.NormalLog('Plugin not support yet');
     }
