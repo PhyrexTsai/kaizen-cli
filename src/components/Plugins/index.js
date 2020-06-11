@@ -30,6 +30,7 @@ function builder(yargs) {
     'witnet'.underline.yellow + ' - Witnet provides decentralized oracle network\n' + 
     'ramp'.underline.yellow + ' - Ramp offer fiat and crypto currency exchange\n' +
     '0xcert'.underline.yellow + ' - Build decentralized apps using fungible and non-fungible tokens quickly, cost efficiently and securely.\n' +
+    'keep'.underline.yellow + ' - Keep network is an off-chain container for private data.\n' +
 		'\nRun ' + '\'kaizen plugins <command>\''.yellow + 
 		' to interact with plugins.\n'
 	);

@@ -27,6 +27,7 @@ async function handler(argv) {
   Log.NormalLog('witnet'.underline.yellow + ' - Witnet infromation');
   Log.NormalLog('ramp'.underline.yellow + ' - Ramp infromation');
   Log.NormalLog('0xcert'.underline.yellow + ' - 0xcert infromation');
+  Log.NormalLog('keep'.underline.yellow + ' - Keep informatino');
 
   Log.NormalLog("\nTo install a plugin run " + "'kaizen plugins install <plugin-name-here>'".yellow)
 

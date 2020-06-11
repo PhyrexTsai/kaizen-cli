@@ -22,6 +22,7 @@ const loomHandler = require('./loom.js');
 const witnetHandler = require('./witnet.js');
 const rampHandler = require('./ramp.js');
 const zeroxcertHandler = require('./zeroxcert');
+const keepHandler = require('./keep.js');
 
 function builder(yargs) {
   return yargs
@@ -189,6 +190,13 @@ async function handler(argv) {
         Log.NormalLog('Installing plugin, please wait a second...');
         Spinner.start();
         await zeroxcertHandler();
+        Spinner.stop();
+        Log.SuccessLog(`Install plugin ${plugin} Successfully`);
+        break;
+      case 'keep':
+        Log.NormalLog('Installing plugin, please wait a second...');
+        Spinner.start();
+        await keepHandler();
         Spinner.stop();
         Log.SuccessLog(`Install plugin ${plugin} Successfully`);
         break;

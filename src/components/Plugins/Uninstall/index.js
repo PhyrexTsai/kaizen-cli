@@ -23,6 +23,7 @@ const loomHandler = require('./loom.js');
 const witnetHandler = require('./witnet.js');
 const rampHandler = require('./ramp.js');
 const zeroxcertHandler = require('./zeroxcert.js');
+const keepHandler = require('./keep.js');
 
 function builder(yargs) {
   return yargs
@@ -210,6 +211,14 @@ async function handler(argv) {
         Spinner.start();
         await zeroxcertHandler();
         updateKaizenJson(kaizenJson, '0xcert');
+        Spinner.stop();
+        Log.SuccessLog(`Remove plugin ${plugin} Successfully`);
+        break;
+      case 'keep':
+        Log.NormalLog('Uninstalling plugin, please wait a second...');
+        Spinner.start();
+        await keepHandler();
+        updateKaizenJson(kaizenJson, 'keep');
         Spinner.stop();
         Log.SuccessLog(`Remove plugin ${plugin} Successfully`);
         break;
