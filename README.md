@@ -117,7 +117,8 @@ The KAIZEN Platform is currently in experimental alpha.
 - [Ramp](https://instant.ramp.network/) - Ramp Network offer fiat to crypto currency exchange
 - [Witnet](https://witnet.io/) - Witnet provides decentralized oracle network
 - [0xcert](https://0xcert.org/) - Build decentralized apps using fungible and non-fungible tokens quickly, cost efficiently and securely.
-- [keep](https://keep.network/) - Keep network is an off-chain container for private data.
+- [Keep](https://keep.network/) - Keep network is an off-chain container for private data.
+- [Torus](https://tor.us/) - New Frictionless login for Dapps.
 
 ## <a name="instances"></a>⚙️ Instances
 - [NYM](http://nymtech.net/) - Decentralized privacy

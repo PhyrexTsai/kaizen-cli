@@ -24,6 +24,7 @@ const witnetHandler = require('./witnet.js');
 const rampHandler = require('./ramp.js');
 const zeroxcertHandler = require('./zeroxcert.js');
 const keepHandler = require('./keep.js');
+const torusHandler = require('./torus.js');
 
 function builder(yargs) {
   return yargs
@@ -219,6 +220,14 @@ async function handler(argv) {
         Spinner.start();
         await keepHandler();
         updateKaizenJson(kaizenJson, 'keep');
+        Spinner.stop();
+        Log.SuccessLog(`Remove plugin ${plugin} Successfully`);
+        break;
+      case 'torus':
+        Log.NormalLog('Uninstalling plugin, please wait a second...');
+        Spinner.start();
+        await torusHandler();
+        updateKaizenJson(kaizenJson, 'torus');
         Spinner.stop();
         Log.SuccessLog(`Remove plugin ${plugin} Successfully`);
         break;

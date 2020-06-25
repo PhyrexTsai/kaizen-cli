@@ -43,11 +43,12 @@ function _handler() {
             Log.NormalLog('witnet'.underline.yellow + ' - Witnet infromation');
             Log.NormalLog('ramp'.underline.yellow + ' - Ramp infromation');
             Log.NormalLog('0xcert'.underline.yellow + ' - 0xcert infromation');
-            Log.NormalLog('keep'.underline.yellow + ' - Keep informatino');
+            Log.NormalLog('keep'.underline.yellow + ' - Keep information');
+            Log.NormalLog('torus'.underline.yellow + ' -Torus infomration');
             Log.NormalLog("\nTo install a plugin run " + "'kaizen plugins install <plugin-name-here>'".yellow);
             Log.NormalLog("\nIt will be automatically downloaded and added to your " + "'package.json'".yellow + " and " + "'kaizen.json'".yellow + " file\n");
 
-          case 24:
+          case 25:
           case "end":
             return _context.stop();
         }
